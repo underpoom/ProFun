@@ -51,25 +51,28 @@ int dc(char c, kk data[])
 		sw(data[3], data[4]);
 		sw(data[5], data[4]);
 	}
+	return 0;
 }
 int refill(kk dice[])
 {
 	for (int i = 1; i <= 6; i++)
 		dice[i].dc = i;
 	sw(dice[4], dice[5]);
+	return 0;
 }
 int main()
 {
 	int n;
 	cin >> n;
-	char c[n + 1][1001];
+	char c[6 + 1][1001];
 
 	kk dice[8];
 	for (int i = 0; i < n; i++)
 	{
 
 		refill(dice);
-		scanf("%s", c[i]);
+		
+		cin >> c[i];
 		int v = strlen(c[i]);
 		for (int j = 0; j < v; j++)
 		{

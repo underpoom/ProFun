@@ -1,4 +1,4 @@
-//https://programming.in.th/task/rev2_problem.php?pid=1006
+//https://programming.in.th/task/rev2_problem.php?pid=1017
 #include <iostream>
 #include <string.h>
 using namespace std;
