@@ -43,4 +43,5 @@ int main()
         cout << data[v].n << " ";
         v++;
     } while (data[v].ns == data[v - 1].ns);
+
 }

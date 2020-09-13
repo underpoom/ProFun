@@ -81,4 +81,5 @@ int main()
 
 		cout << dice[2].dc << " ";
 	}
+
 }
