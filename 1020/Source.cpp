@@ -5,6 +5,16 @@
 #include <limits>
 #include <algorithm>
 using namespace std;
+int ques(int p1, int p2)
+{
+    if (p1 == 1 && p2 == 1)
+        cout << "Double Palindrome";
+    else if (p1 == 1)
+        cout << "Palindrome";
+    else
+        cout << "No";
+}
+
 main()
 {
     char* c = new char[201];
@@ -21,10 +31,6 @@ main()
     for (int i = 0; i <= strlen(c) / 2; i++)
         if (*(c1 + i) != *(c1 + strlen(c) - i - 1))
             p1 = 0;
-    if (p1 == 1 && p2 == 1)
-        cout << "Double Palindrome";
-    else if (p1 == 1)
-        cout << "Palindrome";
-    else
-        cout << "No";
+    ques(p1, p2);
+
 }
