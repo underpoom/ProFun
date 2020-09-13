@@ -71,7 +71,7 @@ int main()
 	{
 
 		refill(dice);
-		
+
 		cin >> c[i];
 		int v = strlen(c[i]);
 		for (int j = 0; j < v; j++)
