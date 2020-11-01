@@ -1,4 +1,4 @@
-//https://programming.in.th/task/rev2_problem.php?pid=1070
+Source #741073:
 #include <iostream>
 using namespace std;
 struct kk
@@ -65,12 +65,10 @@ void qs(int data[])
             break;
         }
 
-
     if (c < a + b)
         cout << "no";
     else
         cout << "yes";
-
 }
 
 int main()
@@ -83,10 +81,11 @@ int main()
     for (int i = 0; i < n; i++)
     {
         cin >> x;
-        if (i == 0)
-            root = insert(root, x, Qs);
-        else
+
+        if (i > 0 and root != NULL)
             insert(root, x, Qs);
+        if (i == 0 or root == NULL)
+            root = insert(root, x, Qs);
     }
 
     qs(Qs);
